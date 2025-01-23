@@ -76,7 +76,7 @@ def main():
         return
 
     # Create a list of input data
-    input_data = [mean_radius, mean_texture, mean_perimeter, mean_area, mean_smoothness]
+    input_data = [mean_radius,mean_perimeter, mean_area, mean_smoothness]
     
     # Prediction button
     if st.button("PREDICT"):
