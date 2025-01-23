@@ -59,18 +59,18 @@ def main():
     
     # Getting the input data from the user
     mean_radius_input = st.text_input("Enter the patient's mean_radius:")
-    mean_texture_input = st.text_input("Enter the patient's mean_texture:")
+    #mean_texture_input = st.text_input("Enter the patient's mean_texture:")
     mean_perimeter_input = st.text_input("Enter the patient's mean_perimeter:")
     mean_area_input = st.text_input("Enter the patient's mean_area:")
-    #mean_smoothness_input = st.text_input("Enter the patient's mean_smoothness:")
+    mean_smoothness_input = st.text_input("Enter the patient's mean_smoothness:")
     
     # Convert inputs to numeric
     try:
         mean_radius = float(mean_radius_input)
-        mean_texture = float(mean_texture_input)
+        #mean_texture = float(mean_texture_input)
         mean_perimeter = float(mean_perimeter_input)
         mean_area = float(mean_area_input)
-        # mean_smoothness = float(mean_smoothness_input)
+        mean_smoothness = float(mean_smoothness_input)
     except ValueError:
         st.error("Please enter valid numeric values.")
         return
